@@ -1,0 +1,722 @@
+@charset "UTF-8";
+/* CSS Document */
+	/*-----------------------------------Estilos Footer-------------------*/
+footer{
+	clear:both;
+	text-align:center;
+	width: 100%;
+	height: 150px;
+	background-color:#928B8B;
+	bottom: 0px;
+	margin-bottom: -100px;
+	
+}
+footer #sociales i {font-size: 1.5em;
+			width: 48px;
+			height: 48px;
+	border: #abcbe6 3px solid;
+	border-radius: 50%;
+	line-height: 48px;}
+		
+footer #sociales i:hover{
+	border: #000000 3px solid;
+		}
+footer   P {color:#abcbe6}
+/*-------------------estilos principales-------------*/
+
+body{
+	margin: 0px
+}
+header{
+	width: 100%;
+	height: 110px;
+	background-color: rgba(244,255,255,.75);
+	margin-top:-60px;
+	
+}
+header img {
+	height: 170px;
+	margin-top: 15px;
+	float: left;
+}
+.separador10{
+	height: 10px;
+}
+.separador30{
+	height: 30px;
+}
+.separador120{
+	height: 100px;
+}
+.separador60
+{height: 60px;
+}
+.separa60{
+	height: 60px;
+}
+.cont1200 {
+	width: 100%;
+	max-width: 1200px;
+	margin:2px auto;
+		}
+.eventos {align-content: center;
+text-align: center;
+height: 210px;
+width: 100%;
+background-color: white;
+font-size: .5em;
+color: #158DD1; 
+}
+.Tevento{font-size: 21px;
+text-align: center;
+font: italic;
+	color: #158DD1;
+	
+}
+.Tevento H3 {
+	color: #158DD1
+}
+          .cont1200 {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .Tevento {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 200px;
+      color: #333;
+    }
+
+    .eventos a {
+      text-decoration: none;
+    }
+/*-------------------estilos navega-------------*/
+body{
+	margin: 0px;
+	width: 100%;
+}
+ 
+header{align-content: center;
+	width: 1500px;
+	height:  110px;
+	background-color:rgba(244,255,255,.7) ;
+     display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	position: sticky;
+	top: 0;
+	
+	
+	
+}
+.menuF{font-family:"Helvetica Neue Bold Italic", "Helvetica Neue Condensed Black", "Helvetica Neue Italic", "Helvetica Neue Light", "Helvetica Neue Light Italic";
+	text-shadow: 2px 2px 6px 
+	
+}
+header img {
+	height: 110px;
+	margin-top: -0px;
+	float: left;
+	padding-left: 40px;
+	
+}
+
+#navegador {
+	list-style-type: none;
+	float: right;
+	margin-top: 30px;
+}
+#navegador li a {font-size: 16px;
+color:#5B5959;
+box-sizing: border-box;+
+	
+	}
+
+#navegador li a:hover{color:#257ADA;
+	text-underline-position: left;
+	
+}
+#navegador li {
+	display:inline-block;
+	padding: 10px 20px;
+	
+}
+
+
+.cont1200 {
+	width: 100;
+	max-width: 100%;
+	margin:0px auto;
+		}
+
+/*--------------------estilos hamburguesa-------------*/
+#menuToggle {
+	display: none;
+	opacity: 0;
+  	width: 400px;
+}
+#menuToggle a
+{
+  text-decoration: none;
+  color:#4F4E4E;
+	text-shadow: 2px 2px 4px
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: #257ADA;
+	text-decoration: underline
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -200px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: rgba(244,255,255,.7);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 10px 10px 70px;
+  font-size: 16px;
+  font-family: "Helvetica Neue Bold Italic", "Helvetica Neue Condensed Black", "Helvetica Neue Italic", "Helvetica Neue Light", "Helvetica Neue Light Italic";
+  text-decoration-color: #000000
+	
+
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/*-------------------estilos lugares-------------*/	
+#lugares h1{
+	color:#158DD1;
+	font:"antic-didone";
+	font-size: 21px;
+	
+}
+.rayaAzul{
+	width: 240px;
+	border-bottom:#36a8f9 solid 3px;
+	margin: 0px auto;
+}
+#cabello .gris i{
+	color: #AEAEAE;
+	font-size: 1.6em;
+}
+.sexto{
+	width: 15%;
+	height: 500px;
+	margin: 0% .8%;
+	float: left;
+	background-color: white;
+	position: relative;
+	overflow: hidden;
+}
+.sexto img{
+	width: 100%;
+	height: 170PX;
+}
+.sexto h4{
+	color: #579CD7;
+	margin: 10px;
+}
+.sexto h1{
+	color:#5C9FDB;
+	
+}
+.sexto p {
+	color: #767676;
+	line-height: 1.8em;
+	font-size: .9em;
+	padding: 0px 8px;
+}
+.oculto{
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	position: absolute;
+	color: #FFFFFF;
+	background-color: rgba(0, 0, 0, .4);
+	top:-90px;
+	transition: all 1s ease;
+}
+.sexto:hover .oculto{
+	top:0px;
+}
+.lupa{
+	width: 64px;
+	height: 64px;
+	background-image;
+	position: absolute;
+	top: 120px;
+	left: -35%;
+	transition: all 1s ease;
+	
+}
+.sexto:hover .lupa{
+	left: 35%;
+}
+
+
+
+/*-------------------estilos carusel-------------*/	
+.carousel-caption h1 {
+	font-size: 2em;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-shadow: 4px 4px 8px black ;
+	justify-content:space-around;
+	vertical-align: middle;
+	margin-bottom: 70px;
+	padding: 50px;
+    line-height: 50px
+}
+.carousel-caption li {text-align: center;
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+display:inline-block;
+padding: 60px 60PX;
+align-content: center;
+text-shadow: 5px 8px 5px black;
+	font-size:  2.1em;
+	vertical-align: middle;
+	margin-bottom: 30px;
+	
+
+	
+}
+.carousel-indicators li {align-content: center;
+	
+	
+}
+#carousel1  { 
+	 background: url("../imagenes/carrousel/estadio azteca.jpg") no-repeat center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+    margin-bottom:0;
+    height: 500px;
+	
+}
+
+	
+}
+#carousel1 .carousel-caption {
+    z-index: 10;
+}
+
+#carousel1 .item {
+    height: 500px;
+}
+carousel1 .carousel-inner > .item > img {
+    position: absolute;
+    min-width: 100%;
+    height: 500px;
+    left: 0;
+    top: 0;
+}
+
+@media (min-width: 768px) {
+    #carousel1 .carousel-caption p {
+        margin-bottom: 20px;
+        line-height: 1.4;
+        font-size: 35px;
+        color : #FFFFFF;
+        -webkit-text-stroke: 1px;
+        text-shadow: 4px 4px 10px #000000;
+    }
+
+    #templatemo-carousel .carousel-caption {
+        padding-bottom: 140px;
+        right: 10%;
+        left: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    #carousel1 .carousel-caption {
+        
+        padding-bottom: 120px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #templatemo-carousel {
+        background: url('../images/fondo_s.jpg') no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow-x: hidden;
+        margin-bottom:0;
+        height: 500px;
+    }
+	
+	
+	
+
+
+/*-------------------área títulos------------------*/
+.txt_welcome{font: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 2em;
+	margin-top: 100px;
+	color: black;
+	padding: 10px 
+	text-align: center;
+	
+	
+}
+.txt_orange{font-size:2em }
+	color: #204DE5}	
+.txt_slogan 
+{text-align: center;
+font-size: 1.5em;
+margin-top: -13px;
+font-style: italic;
+color:gray;
+}
+.template-welcome p {text-align: center;
+font-size: 1.1em;
+margin-top: -13px;
+font-style: italic;
+color:gray;
+}
+.carousel-caption li {margin-top: -50px;
+font-size: 29px;
+display: inline-block;
+padding: 20px 15px;
+}
+.Tevento {margin-top: 30px;}
+.template-welcome {margin-top: 20px;
+}
+.slogan {margin-top: 110px;
+	margin-bottom: 60px;
+}
+/*-------------------estilos eventos------------------*/
+.gris #fashion{
+	height:400px;
+
+}
+.tercio{
+	width: 17%;
+	margin: 0px 1.5%;
+	float: left;
+	text-align: center;
+	margin-top: 2px,
+}
+.tercio h3 {color: #158DD1; 
+font-size: 22px}
+#bolita_1, #bolita_2, #bolita_3, #bolita_4, #bolita_5{
+	width: 150px;
+	height: 150px;
+	border: 6px solid #158DD1;
+	border-radius: 50%;
+	margin: 0px auto;
+    box-shadow: 0px 0px 12px #1bb29e;
+	background-size: cover;
+	background-position: center;
+	transition: all .5s ease;
+	margin-top: 100px;
+}
+#bolita_1{
+	background-image: url("../imagenes/eventos/Diablos_rojos_del_mexico-logo-71F9FFA914-seeklogo.com.png")
+}
+
+#bolita_1:hover{
+	background-image: url("../imagenes/eventos/equipos-ganadores-ligas-liga-mexicana_104_0_823_512.jpg")
+	}
+#bolita_2{
+	background-image: url("../imagenes/eventos/unnamed.jpg")
+	}
+#bolita_2:hover{
+	background-image: url("../imagenes/eventos/1585088537_158898_1585088872_noticia_normal_recorte1.jpg")
+	}
+#bolita_3{
+	background-image: url("../imagenes/eventos/mundial%202026.jpeg")
+	}
+#bolita_3:hover{
+	background-image: url("../imagenes/eventos/mexico-volvera-a-ser-sede-del-mundial-en-2026-1024x534.jpg")
+	}
+#bolita_4{
+	background-image: url("../imagenes/eventos/F1logo_2018.png")
+	}
+#bolita_4:hover{
+	background-image: url("../imagenes/eventos/f1-2021-01-1563352502.jpg")
+	}
+#bolita_5{
+	background-image: url("../imagenes/eventos/live-streaming-concert-for-online-social-media-with-audience-reactions.jpg")
+	}
+#bolita_5:hover{
+	background-image: url("../imagenes/eventos/FoosLondonStad220618-124_(42989552522).jpg")
+	}
+		
+/*-------------------Galería------------------*/
+body {
+    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 80%, #e7e8e9 100%);
+    min-height: 100vh;
+    font: normal 16px sans-serif;
+    padding: 60px 0;
+}
+
+.container.gallery-container {
+    background-color: #fff;
+    color:#588AE5;
+    min-height: 170vh;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 60px;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight: bold;
+    
+	color:#63B6EF;
+	font-size: 24px
+	
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;
+    color: #888;
+    font-size: 18px;
+}
+
+.tz-gallery {
+    padding: 10px;
+	width: 100%;
+
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+	height: 100%;
+    margin-bottom: 10px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+/*-------------------ESTILOS PRODUCTOS-------------*/
+#products h1{
+color:#158DD1;
+	font:"antic-didone";
+	font-size: 21px;
+padding: inherit;
+}
+.separador1000{
+	height: 100px;
+}
+	
+
+}
+.blog_header {
+	align-content: center;
+	color: #158DD1;
+	text-align: center;
+	padding: 0px;
+	margin-left: 0px;
+	
+}
+#products{
+	width: 70%;
+	
+}
+.blog_text {align-content: space-between;
+	margin-top: 20px
+	
+}
+ #partners h1 {
+	color:#158DD1;
+	font:"antic-didone";
+	font-size: 21px;
+    align-content: center;
+     margin-top: 500px
+     
+	
+}
+#products{
+	margin-top: 200px
+}
+.separador1000
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*--------------------------Diferentes tamaños de pantalla--------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+
+@media only screen and (max-width: 1000px) {
+	.txt_welcome {text-align: center;
+	}
+}
+	
+	
+	
+	
+	
+	
+@media only screen and (max-width: 991px)
+	{
+	.txt_welcome {text-align: center;
+	}
+	#menuToggle {
+		display: block;
+		opacity: 1;
+		
+	}
+	
+	#navegador li {
+		display: none;
+	}
+	#logo{
+		display: block;
+		height: 100px;
+		margin-top: 5px;
+		float: right;
+		right: 30px;
+	}
+		.carousel-caption h1 {font-size: 1.7em;
+			margin-bottom: -.2px;
+		}
+		.carousel-caption li {font-size: 1.3em;
+		padding: 1px 5px}
+		
+}
+
+		
+		
+		
+		
+		
